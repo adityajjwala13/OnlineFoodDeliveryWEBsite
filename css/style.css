@@ -1,0 +1,215 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;  
+    z-index: 1; 
+    font-family: 'Grandstander', cursive;
+    top: 0;
+}
+#navbar::before{
+    position: absolute;
+    content: "";
+    background-color: black;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1; 
+    opacity: 0.65;
+}
+#logo{
+    margin: 3px 8px;   
+}
+#logo img{
+    height: 58px;
+}
+ul{
+    display: flex;
+    position: relative;
+    right: 36px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    display: block;
+    padding: 5px;
+    margin: 16px;
+    color: white;   
+}
+a:hover{
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 19px;
+    height: 440px;
+}
+#home::before{
+    position: absolute;
+    content: "";
+    background-image: url(../img/food.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 80%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9558;
+}  
+.h-primary{
+    font-size: 3.4rem;
+    padding: 12px;
+    font-family: 'Grandstander', cursive;
+}   
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 11px;
+    font-family: 'Grandstander', cursive;
+} 
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Grandstander', cursive;
+}
+#home p{
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Grandstander', cursive;
+    line-height: 26px;
+}
+.btn{
+   padding: 7px;
+   margin: 12px 10px;
+   background-color: brown;
+   color: white;
+   border-radius: 12px;
+   cursor: pointer;
+   font-size: 1.1rem;
+   border: 2px solid white;
+}
+.btn:hover{
+color: rgb(46, 23, 23);
+font-weight: bold;
+}
+.center{
+    text-align: center;
+}
+#services{
+    display: flex;
+    margin: 15px;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 38px;
+    margin: 8px;
+    border-radius: 25px;
+    background-color: #f3f3f3;
+}
+#services-container .h-primary{
+    background-color: rgb(245 236 236);
+}
+#services .box p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#services img{
+    height: 165px;
+    width: 225px;
+    border-radius: 17px;
+    display: block;
+    margin: auto;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+.client-item{
+    padding: 2px 8px;  
+    margin: 10px;
+}
+#clients img{
+    height: 168px;
+}
+#client-section{
+    margin: 38px;
+    position: relative;
+}
+#client-section::before{
+    position: absolute;
+    content: "";
+    background-image: url(../img/clients.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    position: absolute;
+    content: "";
+    background-image: url(../img/contact.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.45; 
+}
+#contact-box input, #contact-box textarea{
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 7px;
+    font-size: 1rem;
+    border: 2px solid black;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-box form{
+    width: 47%;
+}
+#contact-box label{
+    font-size: 1.1rem;
+    font-family: 'Grandstander', cursive;
+}
+footer{
+    background-color: black;
+    color: whitesmoke;
+    height: 43px;
+    padding-top: 15px;
+}
+
